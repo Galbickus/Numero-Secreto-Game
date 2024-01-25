@@ -12,10 +12,12 @@ function asignarTextoElemento(elemento, texto) {
 }
 
 function verificarIntento() {
+    //toma el valor ingresado por el usuario desde un campo de entrada en HTML, lo convierte a un número entero y almacena
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     
     if (numeroDeUsuario === numeroSecreto) {
         asignarTextoElemento('p',`Acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+        //para habilitar (quitar la propiedad 'disabled') un elemento HTML con el ID 'reiniciar', lo que permite que sea interactivo
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         //El usuario no acertó.
@@ -54,7 +56,7 @@ function generarNumeroSecreto() {
 }
 
 function condicionesIniciales() {
-    asignarTextoElemento('h1','Juego del número secreto!');
+    asignarTextoElemento('h1','Juego del número secreto');
     asignarTextoElemento('p',`Indica un número del 1 al ${numeroMaximo}`);
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
