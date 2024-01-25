@@ -42,13 +42,15 @@ function generarNumeroSecreto() {
     console.log(numeroGenerado);
     console.log(listaNumerosSorteados);
     //Si ya sorteamos todos los números
-    if (listaNumerosSorteados.length == numeroMaximo) {
-        asignarTextoElemento('p','Ya se sortearon todos los números posibles. Presione ENTER para reiniciar');
-        //acá había un problema faltaba reiniciar el juego en este punto
 
+    if (listaNumerosSorteados.length == numeroMaximo) {
+        asignarTextoElemento('p','Ya se sortearon todos los números posibles. Presione INTENTAR para reiniciar');
+
+        // acá hay un problema, falta reiniciar el juego en este punto
         // Llamamos a la función para comenzar el proceso
-        esperarCualquierTecla();
-        //reiniciarJuego();
+        // esperarCualquierTecla();
+        // reiniciarJuego();
+       
     } else {
         //Si el numero generado está incluido en la lista 
         if (listaNumerosSorteados.includes(numeroGenerado)) {
@@ -79,7 +81,7 @@ function reiniciarJuego() {
     document.querySelector('#reiniciar').setAttribute('disabled','true');
     
 }
-
+/*
 function esperarCualquierTecla() {
     console.log("Presiona cualquier tecla para continuar...");
 
@@ -90,6 +92,7 @@ function esperarCualquierTecla() {
         document.removeEventListener('keypress', arguments.callee);
     });
 }
+*/
 
 condicionesIniciales();
 
