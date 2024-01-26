@@ -15,3 +15,4 @@ Cuando el jugador haya acertado se le informará cuantos intentos realizó para 
 
 
 
+
