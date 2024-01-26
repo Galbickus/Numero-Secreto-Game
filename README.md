@@ -16,3 +16,13 @@ Cuando el jugador acierte se le informará cuantos intentos realizó para lograr
 
 
 
+
+
+![image](https://github.com/Galbickus/Numero-Secreto-Game/assets/135274833/5a6b23a9-bea1-45e0-b0a2-707bef941a9b)
+
+
+
+
+
+![Candidato Oracle](https://github.com/Galbickus/Numero-Secreto-Game/assets/135274833/f57db300-8173-49b4-bc53-09f7da4b472a)
+
