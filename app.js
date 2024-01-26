@@ -19,6 +19,7 @@ function verificarIntento() {
         asignarTextoElemento('p',`Acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
         //para habilitar (quitar la propiedad 'disabled') un elemento HTML con el ID 'reiniciar', lo que permite que sea interactivo
         document.getElementById('reiniciar').removeAttribute('disabled');
+
     } else {
         //El usuario no acertó.
         if (numeroDeUsuario > numeroSecreto) {
@@ -45,11 +46,13 @@ function generarNumeroSecreto() {
 
     if (listaNumerosSorteados.length == numeroMaximo) {
         asignarTextoElemento('p','Ya se sortearon todos los números posibles. Presione INTENTAR para reiniciar');
-
+        //---------
+        location.reload();
+       
         // acá hay un problema, falta reiniciar el juego en este punto
         // Llamamos a la función para comenzar el proceso
         // esperarCualquierTecla();
-        // reiniciarJuego();
+
        
     } else {
         //Si el numero generado está incluido en la lista 
@@ -60,6 +63,7 @@ function generarNumeroSecreto() {
             return numeroGenerado;
         }
     }
+
 }
 
 function condicionesIniciales() {
@@ -81,18 +85,9 @@ function reiniciarJuego() {
     document.querySelector('#reiniciar').setAttribute('disabled','true');
     
 }
-/*
-function esperarCualquierTecla() {
-    console.log("Presiona cualquier tecla para continuar...");
 
-    // Agregamos un escuchador de eventos para el evento keypress
-    document.addEventListener('keypress', function (event) {
-        console.log("Continuando con la ejecución...");
-        // Removemos el escuchador de eventos después de que se ha presionado una tecla
-        document.removeEventListener('keypress', arguments.callee);
-    });
-}
-*/
 
 condicionesIniciales();
+//-------
+//reiniciarJuego();
 
