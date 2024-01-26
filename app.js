@@ -47,13 +47,8 @@ function generarNumeroSecreto() {
     if (listaNumerosSorteados.length == numeroMaximo) {
         asignarTextoElemento('p','Ya se sortearon todos los números posibles. Presione INTENTAR para reiniciar');
         //---------
-        location.reload();
-       
-        // acá hay un problema, falta reiniciar el juego en este punto
-        // Llamamos a la función para comenzar el proceso
-        // esperarCualquierTecla();
-
-       
+        location.reload();  //esta lindura reinicia la página "Gracias  Renzo Walter Tinta Mendoza"
+                            //Para que el Array vuelva a cero.
     } else {
         //Si el numero generado está incluido en la lista 
         if (listaNumerosSorteados.includes(numeroGenerado)) {
