@@ -7,11 +7,11 @@ https://github.com/Galbickus/Numero-Secreto-Game/assets/135274833/8ef69dbb-9325-
 
 <h3>  Consigna </h3> 
 
-Hacer un juego en el que se genere un número random y el ususrio pueda realizar intentos para descubrirlo.
-En cada intento se le informa si el número secreto es mayor o menor.
+Hacer un juego en el que se genere un número random y el usuario pueda realizar intentos para descubrirlo.
+En cada intento se le informa al usuario si el número secreto es mayor o menor que el que se ha ingresado.
 Se puede limitar el número de intentos permitidos y aumentar el rango de números secretos posibles, 10, 36, 100, etc.
-El número secreto no se repetirá hasta que todos los numeros del rango elegido hayan salido por lo menos una vez.
-Cuando el jugador haya acertado se le informará cuantos intentos realizó para lograrlo. 
+El número secreto no se repetirá hasta que todos los números del rango elegido hayan salido por lo menos una vez.
+Cuando el jugador acierte se le informará cuantos intentos realizó para lograrlo. 
 
 
 
